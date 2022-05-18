@@ -25,7 +25,7 @@
                             <td scope="row">{{ $item->id }}</td>
                             <td>{{ $item->name }}</td>
                             <td>{{ $item->category->name ?? 'null' }}</td>
-                            <td>{{ $item->selling_price }}</td>
+                            <td>R$ {{ $item->selling_price }},00</td>
                             <td>
                                 <img src="{{ asset('assets/uploads/products/'.$item->image) }}" alt="Image" class="cate-image">
                             </td>
