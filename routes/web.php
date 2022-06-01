@@ -31,7 +31,7 @@ Auth::routes();
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::middleware(['auth', 'isAdmin'])->group(function (){
-    Route::get('/dashboard', [FrontendController::class, 'index']);
+    Route::get('/dashboard', [App\Http\Controllers\Admin\FrontendController::class, 'index']);
 
     Route::get('categories', [CategoryController::class, 'index']);
     Route::get('add-category', [CategoryController::class, 'add']);

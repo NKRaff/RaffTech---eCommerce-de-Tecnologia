@@ -6,5 +6,48 @@
 
 @section('content')
     @include('layouts.inc.slider')
-    <h1>Bem vindo</h1>
+    
+    <div class="py-5">
+        <div class="container">
+            <div class="row">
+                <h2>Produtos em Destaque</h2>
+                <div class="owl-carousel featured-carousel owl-theme">
+                    @foreach($featured_products as $prod)
+                        <div class="item">
+                            <div class="card">
+                                <img src="{{ asset('assets/uploads/products/'.$prod->image); }}" alt="Imagem do produto">
+                                <div class="card-body">
+                                    <h5>{{ $prod->name }}</h5>
+                                    <span class="float-start">R${{ $prod->selling_price }}</span>
+                                    <span class="float-end"><s>R${{ $prod->original_price }}</s></span>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
+
+@section('scripts')
+<script>
+    $('.featured-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        dots:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            }
+        }
+    })
+</script>
 @endsection

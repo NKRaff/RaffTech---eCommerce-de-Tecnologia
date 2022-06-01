@@ -42,14 +42,14 @@
                         <label for="">Descrição</label>
                         <textarea name="description" rows="3" class="form-control">{{ $products->description }}</textarea>
                     </div>
-<!--
-                    <div class="col-md-6 mb-3">
-                        <label for="">Original Price</label>
-                        <input type="number" class="form-control" value="{{ $products->original_price }}" name="original_price">
-                    </div>
--->
+
                     <div class="col-md-6 mb-3">
                         <label for="">Preço</label>
+                        <input type="number" class="form-control" value="{{ $products->original_price }}" name="original_price">
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="">Preço com Desconto</label>
                         <input type="number" class="form-control" value="{{ $products->selling_price }}" name="selling_price">
                     </div>
 <!--
@@ -62,13 +62,14 @@
                         <label for="">Quantidade</label>
                         <input type="number" class="form-control" value="{{ $products->qty }}" name="qty">
                     </div>
-<!--
+
                     <div class="col-md-6 mb-3">
                         <label for="">Status</label>
                         <input type="checkbox" {{ $products->status == 1 ? 'checked':'' }} name="status" >
+
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="">Trending</label>
+                        <label for="">Popular</label>
                         <input type="checkbox" {{ $products->trending == 1 ? 'checked':'' }} name="trending">
                     </div>
 
@@ -84,7 +85,7 @@
                         <label for="">Meta Description</label>
                         <textarea rows="3" class="form-control" name="meta_description">{{ $products->meta_description }}</textarea>
                     </div>
--->
+
                     @if($products->image)
                         <img id="edit-img" src="{{ asset('assets/uploads/products/'.$products->image) }}" alt="">
                     @endif
