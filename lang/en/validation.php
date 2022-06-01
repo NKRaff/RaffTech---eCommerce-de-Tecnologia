@@ -13,12 +13,12 @@ return [
     |
     */
 
-    'accepted' => 'The :attribute must be accepted.',
-    'accepted_if' => 'The :attribute must be accepted when :other is :value.',
-    'active_url' => 'The :attribute is not a valid URL.',
-    'after' => 'The :attribute must be a date after :date.',
-    'after_or_equal' => 'The :attribute must be a date after or equal to :date.',
-    'alpha' => 'The :attribute must only contain letters.',
+    'accepted' => 'O :attribute deve ser valido.',
+    'accepted_if' => 'O :attribute deve ser valido quando :other for :value.',
+    'active_url' => 'o :attribute não é um URL válido.',
+    'after' => 'O :attribute deve ser uma data após :date.',
+    'after_or_equal' => 'O :attribute deve ser uma data anterior ou igual a :date.',
+    'alpha' => 'O :attribute deve conter apenas letras.',
     'alpha_dash' => 'The :attribute must only contain letters, numbers, dashes and underscores.',
     'alpha_num' => 'The :attribute must only contain letters and numbers.',
     'array' => 'The :attribute must be an array.',

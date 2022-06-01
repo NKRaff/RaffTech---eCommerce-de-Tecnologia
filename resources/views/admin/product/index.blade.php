@@ -2,9 +2,16 @@
 
 @section('content')
     <div class="card">
-        <div class="card-header">
-            <h4>Categorias</h4>
-            <hr>
+        <div class="card-header row">
+            <div class="col-10">
+                <h4>Produtos</h4>
+            </div>
+            <div class="col-2">
+                <a class="nav-link" id="add" href="{{ url('add-products') }}">
+                    <i class="bi bi-folder-plus"></i>
+                    Adicionar Produto
+                </a>
+            </div>
         </div>
 
         <div class="card-body">
@@ -12,11 +19,11 @@
                 <thead>
                     <tr>
                         <th scope="col">Id</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Category</th>
-                        <th scope="col">Selling Price</th>
-                        <th scope="col">Image</th>
-                        <th scope="col">Action</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Categoria</th>
+                        <th scope="col">Preço</th>
+                        <th scope="col">Imagem</th>
+                        <th scope="col">Opções</th>
                     </tr>
                 </thead>
                 <tbody>

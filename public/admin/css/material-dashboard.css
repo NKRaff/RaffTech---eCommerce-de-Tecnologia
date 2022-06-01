@@ -14403,7 +14403,7 @@ h6,
 .footer-big h4 a,
 .media .media-heading,
 .media .media-heading a {
-  color: #3C4858;
+  color: #f4f4f4;
   text-decoration: none;
 }
 
@@ -15107,7 +15107,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 
 .footer .footer-brand:hover,
 .footer .footer-brand:focus {
-  color: #3C4858;
+  color: #fff;
 }
 
 .footer .copyright {
@@ -15150,7 +15150,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   left: 0;
   z-index: 2;
   width: 260px;
-  background: #fff;
+  background: #191919;
   box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
@@ -15270,7 +15270,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 .sidebar .nav li .dropdown-menu a:focus,
 .sidebar .nav li.active>[data-toggle="collapse"] {
   background-color: rgba(200, 200, 200, 0.2);
-  color: #3C4858;
+  color: #f4f4f4;
   box-shadow: none;
 }
 
@@ -15324,7 +15324,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 .sidebar .nav li .dropdown-menu a {
   margin: 10px 15px 0;
   border-radius: 3px;
-  color: #3C4858;
+  color: #f4f4f4;
   padding-left: 10px;
   padding-right: 10px;
   text-transform: capitalize;
@@ -15386,7 +15386,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   padding: 5px 0px;
   display: inline-block;
   font-size: 18px;
-  color: #3C4858;
+  color: #f4f4f4;
   white-space: nowrap;
   font-weight: 400;
   line-height: 30px;
@@ -15481,7 +15481,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 }
 
 .sidebar[data-color="white"] .nav .nav-item.active>a:not([data-toggle="collapse"]) {
-  color: #3C4858;
+  color: #f4f4f4;
   opacity: 1;
   box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(60, 72, 88, 0.4);
 }
@@ -16662,7 +16662,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   display: inline-block;
   margin-bottom: 0;
   font-size: 1em;
-  color: #3C4858;
+  color: #f4f4f4;
   padding-top: 0px;
 }
 
@@ -16972,7 +16972,7 @@ thead.thead-inverse th,
 
 body {
   background-color: #eee;
-  color: #3C4858;
+  color: #f4f4f4;
   font-weight: 300;
 }
 
@@ -17635,7 +17635,7 @@ html[dir="rtl"] .form-check .form-check-sign .check:before {
 }
 
 .card .author a {
-  color: #3C4858;
+  color: #f4f4f4;
   text-decoration: none;
 }
 
@@ -17734,7 +17734,7 @@ html[dir="rtl"] .form-check .form-check-sign .check:before {
 .card .card-header.card-header-icon .card-title,
 .card .card-header.card-header-text .card-title {
   margin-top: 15px;
-  color: #3C4858;
+  color: #f4f4f4;
 }
 
 .card .card-header.card-header-icon h4,
@@ -18670,7 +18670,7 @@ Copyright (c) 2015 Daniel Eden
   }
 
   .navbar-collapse .navbar-nav .nav-item .nav-link {
-    color: #3C4858;
+    color: #f4f4f4;
     margin: 5px 15px;
   }
 

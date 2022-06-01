@@ -74,3 +74,14 @@ i .box-plus{
   width: 450px;
   height: 300px;
 }
+
+#add{
+  background-color: #191919;
+  color: #f4f4f4;
+  text-align: center;
+  border-radius: 5px;
+}
+#add:hover{
+  color: #51aac5;
+  
+}

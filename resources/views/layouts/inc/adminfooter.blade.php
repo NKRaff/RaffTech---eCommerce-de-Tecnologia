@@ -31,7 +31,7 @@
       <script>
         document.write(new Date().getFullYear())
       </script> by
-      <a href="http://127.0.0.1:8000" target="_blank">RaffTech</a> Technology eCommerce.
+      <a href="http://127.0.0.1:8000" target="_blank">RaffTech</a> eCommerce de Tecnologia.
     </div>
   </div>
 </footer>

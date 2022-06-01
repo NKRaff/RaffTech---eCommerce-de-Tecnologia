@@ -20,16 +20,16 @@ return new class extends Migration
             $table->string('slug');
             $table->mediumText('small_description');
             $table->longText('description');
-            $table->string('original_price');
+            $table->string('original_price')->nullable();
             $table->string('selling_price');
             $table->string('image');
             $table->string('qty');
-            $table->string('tax');
-            $table->tinyInteger('status');
-            $table->tinyInteger('trending');
-            $table->mediumText('meta_title');
-            $table->mediumText('meta_description');
-            $table->mediumText('meta_keywords');
+            $table->string('tax')->nullable();
+            $table->tinyInteger('status')->nullable();
+            $table->tinyInteger('trending')->nullable();
+            $table->mediumText('meta_title')->nullable();
+            $table->mediumText('meta_description')->nullable();
+            $table->mediumText('meta_keywords')->nullable();
             $table->timestamps();
         });
     }

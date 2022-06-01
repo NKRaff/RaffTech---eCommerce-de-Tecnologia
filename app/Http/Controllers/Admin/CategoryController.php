@@ -45,6 +45,7 @@ class CategoryController extends Controller
         $category->meta_descrip = $request->input('meta_description');
         $category->save();
         return redirect('/dashboard')->with('status', "Category Added Successfully");
+        
     }
 
     //UPDATE CATEGORY
@@ -80,6 +81,7 @@ class CategoryController extends Controller
         $category->meta_descrip = $request->input('meta_description');
         $category->update();
         return redirect('dashboard')->with('status', "Category Updated Successfully");
+        
     }
 
     //DELETE CATEGORY
