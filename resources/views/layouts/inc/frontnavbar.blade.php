@@ -1,4 +1,4 @@
-<div class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!--<div class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ms-auto">
 
@@ -15,7 +15,7 @@
 
     </div>
   </div>
-</div>   
+</div>-->   
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
@@ -25,10 +25,33 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-auto">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Pricing</a>
-        <a class="nav-link disabled">Disabled</a>
+        <a class="nav-link active" aria-current="page" href="{{ url('/') }}">Home</a>
+        <a class="nav-link" href="{{ url('category') }}">Categorias</a>
+        @guest
+          @if (Route::has('login'))
+            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+          @endif
+          @if (Route::has('register'))
+            <a class="nav-link" href="{{ route('register') }}">{{ __('Registrar') }}</a>
+          @endif
+        @else
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            {{ Auth::user()->name }}
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Meu Perfil</a></li>
+            <li>
+              <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                {{ __('Logout') }}
+              </a>
+              <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+              </form>
+            </li>
+          </ul>
+        </li>
+        @endguest
       </div>
     </div>
   </div>

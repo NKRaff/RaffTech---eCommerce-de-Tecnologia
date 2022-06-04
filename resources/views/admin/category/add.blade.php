@@ -23,7 +23,7 @@
                         <textarea rows="3" class="form-control" name="description"></textarea>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="">Status</label>
+                        <label for="">Visível</label>
                         <input type="checkbox" name="status">
                     </div>
                     <div class="col-md-6 mb-3">
