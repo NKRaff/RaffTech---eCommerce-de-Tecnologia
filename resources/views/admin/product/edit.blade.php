@@ -31,7 +31,7 @@
                         <input type="text" class="form-control" value="{{ $products->name }}" name="name">
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="">Slug</label>
+                        <label for="">Slug (URL)</label>
                         <input type="text" class="form-control" value="{{ $products->slug }}" name="slug">
                     </div>
                     <div class="col-md-12 mb-3">
@@ -64,7 +64,7 @@
                     </div>
 
                     <div class="col-md-6 mb-3">
-                        <label for="">Status</label>
+                        <label for="">Visível</label>
                         <input type="checkbox" {{ $products->status == 1 ? 'checked':'' }} name="status" >
 
                     </div>

@@ -18,8 +18,8 @@
                                 <img src="{{ asset('assets/uploads/products/'.$prod->image); }}" alt="Imagem do produto">
                                 <div class="card-body">
                                     <h5>{{ $prod->name }}</h5>
-                                    <span class="float-start">R${{ $prod->selling_price }}</span>
-                                    <span class="float-end" style="color: red;"><s>R${{ $prod->original_price }}</s></span>
+                                    <span class="float-start">R${{ $prod->selling_price }},00</span>
+                                    <span class="float-end" style="color: red;"><s>R${{ $prod->original_price }},00</s></span>
                                 </div>
                             </div>
                         </div>
@@ -36,15 +36,17 @@
                 <div class="owl-carousel featured-carousel owl-theme">
                     @foreach($trending_category as $tcategory)
                         <div class="item">
-                            <div class="card">
-                                <img src="{{ asset('assets/uploads/category/'.$tcategory->image); }}" alt="Imagem do produto">
-                                <div class="card-body">
-                                    <h5>{{ $tcategory->name }}</h5>
-                                    <p>
-                                        {{ $tcategory->description }}
-                                    </p>
+                            <a href="{{ url('view-category/'.$tcategory->slug) }}">
+                                <div class="card">
+                                    <img src="{{ asset('assets/uploads/category/'.$tcategory->image); }}" alt="Imagem do produto">
+                                    <div class="card-body">
+                                        <h5>{{ $tcategory->name }}</h5>
+                                        <p>
+                                            {{ $tcategory->description }}
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     @endforeach
                 </div>

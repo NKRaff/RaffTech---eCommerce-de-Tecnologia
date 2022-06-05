@@ -44,6 +44,8 @@
     <script src="https://kit.fontawesome.com/20102b8b28.js" crossorigin="anonymous"></script>
     
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="{{ asset('admin/js/javascrip.js') }}"></script>
     @if(session('status'))
         <script>
             swal("{{ session('status') }}");

@@ -50,7 +50,7 @@ class ProductController extends Controller
         $products->meta_description = $request->input('meta_description');
         $products->meta_keywords = $request->input('meta_keywords');
         $products->save();
-        return redirect('products')->with('status', "Product Added Successfully");
+        return redirect('products')->with('status', "Produto Adicionado com Sucesso");
     }
 
     //Update Product
@@ -90,7 +90,7 @@ class ProductController extends Controller
         $products->meta_description = $request->input('meta_description');
         $products->meta_keywords = $request->input('meta_keywords');
         $products->update();
-        return redirect('products')->with('status', "Product updated Successfully");
+        return redirect('products')->with('status', "Produto Atualizado com Sucesso");
     }
 
     //Delete Protucts
@@ -103,7 +103,7 @@ class ProductController extends Controller
             File::delete($path);
         }
         $products->delete();
-        return redirect('products')->with('status', "Product deleted Successfully");
+        return redirect('products')->with('status', "Produto Deletado com Sucesso");
     }
 
 }
