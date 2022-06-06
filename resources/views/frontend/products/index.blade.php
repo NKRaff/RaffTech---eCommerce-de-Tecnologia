@@ -5,13 +5,13 @@
 @endsection
 
 @section('content')
-
+<!--
     <div class="py-3 mb-4 shadow-sm bg-primary text-white">
         <div class="container">
             <h6 class="mb-0">Categoria / {{ $category->name }}</h6>
         </div>
     </div>
-
+-->
     <div class="py-5">
         <div class="container">
             <div class="row">

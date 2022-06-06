@@ -4,14 +4,14 @@
     
 
 @section('content')
-
+<!--
     <div class="py-3 mb-4 shadow-sm bg-primary text-white">
         <div class="container">
             <h6 class="mb-0">Categoria / {{ $products->category->name }} / {{ $products->name }}</h6>
         </div>
     </div>
-
-    <div class="container">
+-->
+    <div class="container mt-3">
         <div class="card shadow">
             <div class="card-body">
                 <div class="row">

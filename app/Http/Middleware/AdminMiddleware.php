@@ -25,12 +25,12 @@ class AdminMiddleware
             }
             else
             {
-                return redirect('/home')->with('status','Access Denied! as you are not as admin');
+                return redirect('/home')->with('status','Acesso Negado! Você não é um Administrador');
             }
         }
         else
         {
-            return redirect('/home')->with('status','Please Login First');
+            return redirect('/home')->with('status','Por Favor, Faça Login Primeiro');
         }
     }
 }
